@@ -7,7 +7,7 @@ const BeforeAfter = () => {
   const results = [
     {
       before: "/Bald-1.png",
-      after: "/bald-hair-grow.png",
+      after: "/after-regrow.jpeg",
       title: "Receding Hairline Treatment",
       duration: "6 months"
     },
