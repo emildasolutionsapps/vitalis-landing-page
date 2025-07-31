@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <img 
-              src="/vitalislogo1.svg" 
+              src="/landingpage/vitalislogo1.svg" 
               alt="Vitalis Healthcare Logo" 
               className="w-25 h-15"
             />
