@@ -27,13 +27,20 @@ const OfferBanner = () => {
 
 
             </div>
-            
-            <button 
-              onClick={scrollToChat}
-              className="bg-white text-blue-600 px-14 py-2 rounded-xl text-xl font-bold hover:bg-gray-100 transition-colors shadow-lg transform hover:scale-105"
-            >
-              Book Now
-            </button>
+           <a
+  href="https://wa.link/4k4o1e"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block"          // keeps the scale/hover working
+>
+  <button
+    type="button"
+    className="bg-white text-blue-600 px-14 py-2 rounded-xl text-xl font-bold hover:bg-gray-100 transition-colors shadow-lg transform hover:scale-105"
+  >
+    Book Now
+  </button>
+</a>
+
           </div>
         </div>
       </div>
