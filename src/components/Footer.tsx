@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center ">
               <img 
-                src="/vitalislogo1.svg" 
+                src="/landingpage/vitalislogo1.svg" 
                 alt="Vitalis Healthcare Logo" 
                 className="w-30 h-30"
               />
