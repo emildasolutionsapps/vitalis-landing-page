@@ -1,6 +1,5 @@
 import React from 'react';
 import { Phone, Mail, Clock, Heart } from 'lucide-react';
-import vitalisLogo from '@/assets/vitalislogo1.svg';
 
 const Header = () => {
   return (
@@ -8,11 +7,11 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-2">
-           <img
-  src={vitalisLogo}
-  alt="Vitalis Healthcare Logo"
-  className="w-25 h-15"
-/>
+            <img 
+              src="/vitalislogo1.svg" 
+              alt="Vitalis Healthcare Logo" 
+              className="w-25 h-15"
+            />
           </div>
           
           <div className="hidden md:flex items-center space-x-6 text-sm">
