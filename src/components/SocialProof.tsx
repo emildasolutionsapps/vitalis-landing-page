@@ -19,7 +19,7 @@ const SocialProof = () => {
         
         <div className="mb-12">
           <img 
-            src="/testimonial.png" 
+            src="/landingpage/testimonial.png" 
             alt="Patient Testimonials"
             className="w-full max-w-4xl mx-auto h-auto rounded-xl object-contain cursor-pointer transform hover:scale-105 transition-all duration-300"
             loading="lazy"
