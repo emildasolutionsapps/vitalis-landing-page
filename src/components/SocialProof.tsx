@@ -31,7 +31,7 @@ const SocialProof = () => {
   <button 
     onClick={() =>
       window.open(
-        'https://wa.me/918494906440?text=Hi%2C%20I%20would%20like%20to%20book%20a%20hair%20consultation',
+        'https://wa.link/4k4o1e',
         '_blank'
       )
     }
