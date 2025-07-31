@@ -9,7 +9,7 @@ const WhatMakesUsDifferent = () => {
           {/* Image Section */}
           <div className="order-2 lg:order-1 flex h-full">
             <img
-              src="/dr-nidaand-teams.png"
+              src="/landingpage/dr-nidaand-teams.png"
               alt="Vitalis Healthcare Clinic Interior"
               className="w-full h-full object-cover rounded-xl shadow-lg"
             />
