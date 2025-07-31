@@ -6,20 +6,20 @@ const BeforeAfter = () => {
   
   const results = [
     {
-      before: "/Bald-1.png",
-      after: "/after-regrow.jpeg",
+      before: "/landingpage/Bald-1.png",
+      after: "/landingpage/after-regrow.jpeg",
       title: "Receding Hairline Treatment",
       duration: "6 months"
     },
     {
-      before: "/secondfirst.jpg",
-      after: "/secondafter.jpg",
+      before: "/landingpage/secondfirst.jpg",
+      after: "/landingpage/secondafter.jpg",
       title: "Crown Thinning Recovery",
       duration: "4 months"
     },
     {
-      before: "/ladybefore.png",
-      after: "/ladyafter.png",
+      before: "/landingpage/ladybefore.png",
+      after: "/landingpage/ladyafter.png",
       title: "Female Pattern Hair Loss",
       duration: "8 months"
     }
