@@ -23,9 +23,20 @@ const Header = () => {
               <Clock className="w-4 h-4" />
               <span>11 AM - 8 PM</span>
             </div>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
-              Book Consultation
-            </button>
+            <a
+  href="https://wa.link/4k4o1e"          // ← WhatsApp link
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block"               // keeps tailwind styles intact
+>
+  <button
+    type="button"
+    className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+  >
+    Book Consultation
+  </button>
+</a>
+
           </div>
         </div>
       </div>
