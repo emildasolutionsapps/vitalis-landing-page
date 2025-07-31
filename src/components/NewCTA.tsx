@@ -21,7 +21,7 @@ const NewCTA = () => {
             </a>
             
             <a 
-  href="https://wa.me/918494906440?text=Hi%2C%20I%20would%20like%20to%20book%20a%20hair%20consultation"
+  href="https://wa.link/4k4o1e"
   target="_blank"
   rel="noopener noreferrer"
   className="bg-green-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-600 transition-colors flex items-center justify-center space-x-3 shadow-lg min-w-[180px]"
