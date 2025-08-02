@@ -1,8 +1,18 @@
 import React from 'react';
 
+// This line tells TypeScript that the function exists on the window object
+declare global {
+  interface Window {
+    gtag_report_conversion: (url?: string) => void;
+  }
+}
+
 const OfferBanner = () => {
-  const scrollToChat = () => {
-    document.getElementById('chat-section')?.scrollIntoView({ behavior: 'smooth' });
+  // 👇 1. Create a handler function for the click
+  const handleBookNowClick = () => {
+    if (window.gtag_report_conversion) {
+      window.gtag_report_conversion();
+    }
   };
 
   return (
@@ -22,25 +32,23 @@ const OfferBanner = () => {
             <div className="">
               {/* Primary text */}
               <div className="text-center font-bold uppercase bg-gradient-to-r from-white via-red-500 to-white bg-[length:200%] bg-clip-text text-transparent animate-gradient">
-  LIMITED TIME ONLY
-</div>
-
-
+                LIMITED TIME ONLY
+              </div>
             </div>
-           <a
-  href="https://wa.link/4k4o1e"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-block"          // keeps the scale/hover working
->
-  <button
-    type="button"
-    className="bg-white text-blue-600 px-14 py-2 rounded-xl text-xl font-bold hover:bg-gray-100 transition-colors shadow-lg transform hover:scale-105"
-  >
-    Book Now
-  </button>
-</a>
-
+            <a
+              href="https://wa.link/4k4o1e"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+              onClick={handleBookNowClick} // 👇 2. Add the onClick handler here
+            >
+              <button
+                type="button"
+                className="bg-white text-blue-600 px-14 py-2 rounded-xl text-xl font-bold hover:bg-gray-100 transition-colors shadow-lg transform hover:scale-105"
+              >
+                Book Now
+              </button>
+            </a>
           </div>
         </div>
       </div>

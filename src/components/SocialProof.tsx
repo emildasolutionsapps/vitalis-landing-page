@@ -1,8 +1,21 @@
 import React from 'react';
 
+// This line tells TypeScript that the function exists on the window object
+declare global {
+  interface Window {
+    gtag_report_conversion: (url?: string) => void;
+  }
+}
+
 const SocialProof = () => {
-  const scrollToChat = () => {
-    document.getElementById('chat-section')?.scrollIntoView({ behavior: 'smooth' });
+  // 👇 1. Create a handler function for the click
+  const handleSpotsClick = () => {
+    // First, report the conversion
+    if (window.gtag_report_conversion) {
+      window.gtag_report_conversion();
+    }
+    // Then, perform the original action of opening the link
+    window.open('https://wa.link/4k4o1e', '_blank');
   };
 
   return (
@@ -18,8 +31,8 @@ const SocialProof = () => {
         </div>
         
         <div className="mb-12">
-          <img 
-            src="/landingpage/testimonial.png" 
+          <img
+            src="/landingpage/testimonial.png"
             alt="Patient Testimonials"
             className="w-full max-w-4xl mx-auto h-auto rounded-xl object-contain cursor-pointer transform hover:scale-105 transition-all duration-300"
             loading="lazy"
@@ -28,19 +41,13 @@ const SocialProof = () => {
         
         <div className="text-center">
           <div className="text-center">
-  <button 
-    onClick={() =>
-      window.open(
-        'https://wa.link/4k4o1e',
-        '_blank'
-      )
-    }
-    className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors shadow-lg animate-pulse"
-  >
-    Only two spots remaining this week
-  </button>
-</div>
-
+            <button
+              onClick={handleSpotsClick} // 👇 2. Update the onClick to use the new handler
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors shadow-lg animate-pulse"
+            >
+              Only two spots remaining this week
+            </button>
+          </div>
         </div>
       </div>
     </section>
